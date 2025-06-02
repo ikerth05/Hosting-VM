@@ -11,10 +11,13 @@
   <br>
   <img src="/img/Login.png" alt="HTML5" width="1200"/>
 - También contiene un apartado el cual sirve para comprar las máquinas y es el apartado realizado con JS, también ingresa los valores en la BD.
+<br>
   <img src="/img/Crear_maquinas.png" alt="HTML5" width="1200"/>
 - Menu metodos de pago.
-  <img src="/img/Metodos_de_pago.png" alt="HTML5" width="1200"/>
+<br>
+   <img src="/img/Metodos_de_pago.png" alt="HTML5" width="1200"/>
 - Y un apartado para encender / apagar / reiniciar las máquinas de los clientes. Para que lleven su propia gestión.
+<br>
   <img src="/img/Gestion_maquinas.png" alt="HTML5" width="1200"/>
 
 
@@ -36,6 +39,7 @@
 # ZABBIX
 
 - En la empresa XHOSTING contamos con un sistema de monitorización de las máquinas haciendo uso del Software ZABBIX el cual nos permite a tiempo real supervisar los clientes y detectar problemas.
+<br>
   <img src="/img/dashboard_zabbix.png" alt="HTML5" width="1200"/>
 
 
