@@ -7,4 +7,22 @@
     - PHP   <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" width="30"/>
     - JS   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JS Logo" width="15"/>
 
--
+- La página contiene un sistema de Login funcional que ingresa los datos en la Base de Datos del servidor principal el cual hace uso de MySQL.
+  IMAGEN
+- También contiene un apartado el cual sirve para comprar las máquinas y es el apartado realizado con JS, también ingresa los valores en la BD.
+  IMAGEN
+
+# Conexión a las máquinas clientes
+
+- Los clientes una vez tienen las máquinas, para conectarse disponen de dos metodos para conectarse:
+      - Linux: SSH
+      - Windows: RDP o SSH
+
+# Redirecciones
+
+- En mi caso el proyecto se ha realizado en mi PC el cual hacia de Servidor usando una VM de Linux mediante VirtualBox, dentro de el se alojan los dos clientes también con VirtualBox, 1 Windows - 1 Linux
+- Por la razón de estar el servidor en una VM y los clientes otra VM dentro de ella no podían salir a internet con normalidad, ya que no se les llegaba a asignar una IP del router debido a la virtualización.
+- Por ello los clientes salian a internet mediante el servidor principal pero a ellos no podían llegar directamente, usamos una red interna creada para poder comunicar los clientes con el servidor.
+- Una vez la red interna creada haciendo uso de Reverse Proxy con el servico Nginx se pudo llegar a hacer que las páginas web de los clientes saliesen al exterior.
+- Para la conexión por SSH o RDP usamos redireccionamiento de puertos atraves del servidor principal, el cual movia todo el tráfico para llegar al destino final.
+- EN EL DOCUMENTO TAL SE PUEDE OBSERVAR DE FORMA GRÁFICA PARA MEJOR EXPLICACIÓN
