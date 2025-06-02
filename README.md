@@ -11,6 +11,9 @@
   IMAGEN
 - También contiene un apartado el cual sirve para comprar las máquinas y es el apartado realizado con JS, también ingresa los valores en la BD.
   IMAGEN
+- Y un apartado para encender / apagar / reiniciar las máquinas de los clientes. Para que lleven su propia gestión.
+  IMAGEN
+
 
 # Conexión a las máquinas clientes
 
@@ -27,4 +30,7 @@
 - Para la conexión por SSH o RDP usamos redireccionamiento de puertos atraves del servidor principal, el cual movia todo el tráfico para llegar al destino final.
 - EN EL DOCUMENTO <a href="https://github.com/ikerth05/Hosting-VM/blob/main/Copia%20de%20Esquema-Infraestructura.pptx.pdf">ESQUEMA</a> SE PUEDE OBSERVAR DE FORMA GRÁFICA PARA MEJOR EXPLICACIÓN.
 
+# ZABBIX
+
 # También contiene una parte de documentos de legislación la cual no está subida al repositorio
+
