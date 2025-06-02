@@ -22,7 +22,7 @@
 
 # Para ver el funcionamiento de la página web adjunto un video.
 <br>
-<a href="/img/PAGINA-WEB.mp4">LINK</a>
+<a href="/PAGINA-WEB.mp4">LINK</a>
 
 
 # Conexión a las máquinas clientes
