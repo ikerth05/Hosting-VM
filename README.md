@@ -35,5 +35,9 @@
 
 # ZABBIX
 
+- En la empresa XHOSTING contamos con un sistema de monitorización de las máquinas haciendo uso del Software ZABBIX el cual nos permite a tiempo real supervisar los clientes y detectar problemas.
+  <img src="/img/dashboard_zabbix.png" alt="HTML5" width="1200"/>
+
+
 # También contiene una parte de documentos de legislación la cual no está subida al repositorio
 
