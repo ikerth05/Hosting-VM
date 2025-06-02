@@ -25,4 +25,4 @@
 - Por ello los clientes salian a internet mediante el servidor principal pero a ellos no podían llegar directamente, usamos una red interna creada para poder comunicar los clientes con el servidor.
 - Una vez la red interna creada haciendo uso de Reverse Proxy con el servico Nginx se pudo llegar a hacer que las páginas web de los clientes saliesen al exterior.
 - Para la conexión por SSH o RDP usamos redireccionamiento de puertos atraves del servidor principal, el cual movia todo el tráfico para llegar al destino final.
-- EN EL DOCUMENTO TAL SE PUEDE OBSERVAR DE FORMA GRÁFICA PARA MEJOR EXPLICACIÓN
+- EN EL DOCUMENTO (https://github.com/ikerth05/Hosting-VM/blob/main/Copia%20de%20Esquema-Infraestructura.pptx.pdf) SE PUEDE OBSERVAR DE FORMA GRÁFICA PARA MEJOR EXPLICACIÓN
