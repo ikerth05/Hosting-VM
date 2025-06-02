@@ -1,0 +1,85 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const precioRAM = 0.5;
+    const precioCPU = 1.5;
+    const precioDisco = 0.01;
+    const precioMonitorizacion = 3; // Precio por la monitorización H24
+
+    const maquinasInput = document.getElementById("maquinas");
+    const contenedorFormularios = document.getElementById("formularios-container");
+    const formularioBase = document.getElementById("menu-compra-template");
+    const precioTotalElement = document.querySelector(".formato-precio-total p"); // Referencia al elemento donde mostrar el total
+
+    // Función para calcular el precio de una máquina virtual y actualizar el span "preciomaquina"
+    function calcularPrecio(formulario) {
+        const ram = parseInt(formulario.querySelector(".ram").value);
+        const cpu = parseInt(formulario.querySelector(".cpu").value);
+        const disco = parseInt(formulario.querySelector(".disco").value);
+        const monitorizacion = formulario.querySelector(".monitorizacion").value === "Si" ? precioMonitorizacion : 0; // Añadir el precio de monitorización si está marcado
+        
+        const preciomaquina = (ram * precioRAM) + (cpu * precioCPU) + (disco * precioDisco) + monitorizacion;
+        
+        formulario.querySelector(".preciomaquina").textContent = preciomaquina.toFixed(2);
+        return preciomaquina;
+    }
+
+    // Función para generar los formularios dinámicamente según la cantidad
+    function generarFormularios() {
+        contenedorFormularios.innerHTML = ""; // Limpiar formularios anteriores
+        const cantidad = parseInt(maquinasInput.value);
+        document.getElementById("cantidad-maquinas-enviada").value = cantidad;
+        let precioTotal = 0;
+
+        for (let i = 0; i < cantidad; i++) {
+            const nuevoFormulario = formularioBase.cloneNode(true);
+            nuevoFormulario.removeAttribute("id"); // Quitar el ID duplicado
+            nuevoFormulario.style.display = "block"; // Hacerlo visible
+            contenedorFormularios.appendChild(nuevoFormulario);
+            console.log("Formulario generado:", nuevoFormulario);
+
+            // Añadir eventos para actualizar precio dinámicamente
+            nuevoFormulario.querySelector(".ram").addEventListener("input", () => {
+                const precioMaquina = calcularPrecio(nuevoFormulario);
+                actualizarPrecioTotal();
+            });
+            nuevoFormulario.querySelector(".cpu").addEventListener("input", () => {
+                const precioMaquina = calcularPrecio(nuevoFormulario);
+                actualizarPrecioTotal();
+            });
+            nuevoFormulario.querySelector(".disco").addEventListener("input", () => {
+                const precioMaquina = calcularPrecio(nuevoFormulario);
+                actualizarPrecioTotal();
+            });
+            nuevoFormulario.querySelector(".monitorizacion").addEventListener("change", () => {
+                const precioMaquina = calcularPrecio(nuevoFormulario);
+                actualizarPrecioTotal();
+            });
+
+            // Calcular precio inicial
+            precioTotal += calcularPrecio(nuevoFormulario);
+        }
+
+        // Actualizar el precio total cuando los formularios se generen
+        actualizarPrecioTotal();
+    }
+
+    // Función para actualizar el precio total en el HTML
+    function actualizarPrecioTotal() {
+        let precioTotal = 0;
+        const formularios = contenedorFormularios.querySelectorAll(".menu-compra");
+        formularios.forEach(formulario => {
+            const precioMaquina = parseFloat(formulario.querySelector(".preciomaquina").textContent);
+            precioTotal += precioMaquina;
+        });
+
+        // Actualizar el precio total en el elemento .formato-precio-total p
+        precioTotalElement.innerHTML = `Precio Total: €${precioTotal.toFixed(2)}`;
+    }
+
+    // Detectar cambios en la cantidad de máquinas y generar formularios
+    maquinasInput.addEventListener("input", generarFormularios);
+
+    // Generar los formularios al inicio
+    generarFormularios();
+});
+</script>

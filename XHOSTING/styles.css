@@ -1,0 +1,776 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarifa button:hover {
+    transform: scale(1.1);
+}
+
+.redes img:hover {
+    transform: scale(1.10);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-index {
+    background-image: url(img/p6.png);
+    background-repeat: repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+    color: #0048f9;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-bottom: 1px solid grey;
+    height: 8rem;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.imagenindex {
+    height: 80px;
+    width: 80px;
+}
+
+.h1-header {
+    margin: 0;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.3px white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login img:hover {
+    border: solid white 1px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #0048f9;
+}
+
+.traductor img {
+    display: none;
+}
+
+nav {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+}
+
+nav a {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #0048f9;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.sobrenosotros h2 {
+    margin-left: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    list-style-position: inside;
+}
+
+ul li {
+    display: flex;
+}
+
+.sobrenosotros {
+    background-image: url(img/CPD.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cuadro-texto {
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: rgba(148, 245, 213, 0.8);
+    border-radius: 30px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.sobrenosotros p {
+    text-align: justify;
+    padding: 9px;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
+    height: 4%;
+    width: 100%;
+}
+
+footer p {
+    text-align: left !important;
+    margin-left: 15px;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+footer a {
+    margin-right: 20px;
+}
+
+.ubicacion {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ubicacion p {
+    text-align: center;
+}
+
+.mapa {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.mapa iframe {
+    border: 2px solid black;
+    padding-bottom: 20px;
+}
+
+.main-ubicacion {
+    background-image: url(img/fondo_chipset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tarifa ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tick:before {
+    content: '✓';
+    margin-right: 10px;
+    color: green;
+    font-size: 20px;
+}
+
+.cross:before {
+    content: '✘';
+    margin-right: 10px;
+    color: red;
+    font-size: 20px;
+}
+
+.complementario:before {
+    content: '?';
+    margin-right: 10px;
+    color: rgb(31, 31, 247);
+    font-size: 20px;
+}
+
+.contenedor-tarifas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.tarifa {
+    border: 2px solid grey;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(195, 255, 235);
+    width: 30%;
+    border-radius: 0.5rem;
+}
+
+.tarifas h1 {
+    text-align: center;
+}
+
+.tarifas ul {
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.tarifa button {
+    cursor: pointer;
+    border: solid 2px #0048f9;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-weight: bolder;
+}
+
+.tarifa button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.tarifa:hover {
+    border: #0048f9 solid 2px;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.tarifas {
+    background-image: url(img/p6.png);
+}
+
+.tarifas h2,
+li {
+    font-family: "Kanit", sans-serif;
+}
+
+.titulo {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.texto-texto {
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    border-radius: 6px;
+    color: red;
+}
+
+.inicio-index {
+    display: flex;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 6%;
+    padding-left: 6%;
+    background-color: white;
+    margin: 2%;
+}
+
+.ver-planes {
+    background-color: rgba(137, 211, 245, 0.678);
+    padding-left: 15px;
+    text-align: justify;
+    padding-right: 20px;
+    margin-right: 5%;
+}
+
+.ver-planes h2 {
+    text-align: left;
+}
+
+
+/* BOTON COMPRAR */
+
+.formato-precio-total {
+    align-items: center;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    width: 43%;
+    justify-content: space-between;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+.boton-comprar {
+    cursor: pointer;
+    border: solid 2px #0048f9;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-weight: bolder;
+}
+
+.boton-comprar:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+
+/* ADQUIRIR PLANES */
+
+.formularios-container-class h3 {
+    font-family: "Kanit", sans-serif;
+    font-weight: normal;
+}
+
+.cantidad-maquinas {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    width: 40%;
+    background-color: rgb(195, 255, 235);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-adquirir-tarifa form {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formularios-container-class {
+    width: 100%;
+}
+
+label,
+input,
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.body-adquirir-tarifa {
+    background-image: url(img/p6.png);
+}
+
+.main-adquirir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 3%;
+    padding: 2%;
+    margin-bottom: 3%;
+    background-color: rgb(195, 255, 235);
+    border-radius: 1rem;
+}
+
+.menu-compra select {
+    width: 101%;
+}
+
+.formato-precio-total {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formato-precio-total p {
+    text-align: center;
+}
+
+.formato-precio-total button {
+    margin-right: 3rem;
+}
+
+.body-adquirir-tarifa h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+
+/* DESPLEGABLE LOGIN */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropbtn img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content p {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content a:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* MIS MAQUINAS */
+
+.p6 {
+    background-image: url(img/p6.png);
+    background-repeat: repeat;
+}
+
+.maquinas-main {
+    justify-content: center;
+    align-items: center;
+}
+
+.maquina {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem;
+    border: solid 2px black;
+    background-color: rgb(195, 255, 235);
+    width: 30%;
+    font-family: "Kanit", sans-serif;
+}
+
+.unerline {
+    text-decoration: underline;
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.inferior1 button {
+    width: 4rem;
+}
+
+.inferior2 button {
+    width: 8.28rem;
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.inferior1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.hardware {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hardware img {
+    width: 30px;
+    margin-left: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+.hardware img:first-of-type {
+    width: 30px;
+    margin-left: 0;
+    margin-right: 0.4rem;
+}
+
+.botones-maquina {
+    display: flex;
+}
+
+.botones-maquina :first-of-type {
+    margin-right: 1.5px;
+}
+
+.iniciar-maquina:hover {
+    color: green;
+    background-color: rgba(142, 228, 142, 0.692);
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border: green 2px solid;
+}
+
+.apagar-maquina:hover {
+    color: rgb(226, 0, 0);
+    background-color: rgba(241, 103, 103, 0.692);
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border: rgb(226, 0, 0) 2px solid;
+}
+
+.reiniciar-maquina:hover {
+    color: rgb(119, 97, 0);
+    background-color: rgba(247, 221, 135, 0.534);
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border: rgb(119, 97, 0) 2px solid;
+}
+
+.editar-maquina:hover {
+    color: rgb(0, 0, 226);
+    background-color: rgba(137, 135, 247, 0.534);
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border: rgb(0, 0, 226) 2px solid;
+}
+
+.inferior2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.monitorizacion-maquina {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+@media(max-width: 1200px) {
+    .maquina {
+        width: 50%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .maquina {
+        width: 60%;
+    }
+}
+
+@media(max-width: 600px) {
+    .maquina {
+        width: 80%;
+    }
+}
+
+
+/* RESPONSIVE */
+
+.imagen_index2 {
+    display: none;
+}
+.imagen_index3 {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    .ver-planes {
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 1.5rem;
+    }
+    .imagen_index {
+        display: none;
+    }
+    .imagen_index2 {
+        display: flex;
+        width: 40%;
+    }
+    .inicio-index {
+        display: flex;
+        flex-direction: column;
+    }
+    .mapa {
+        width: 60%;
+    }
+}
+
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 50px;
+    }
+    .imagen-index {
+        height: 30px;
+        width: 30px;
+    }
+    .ver-planes {
+        width: 95%;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contenedor-tarifas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarifa {
+        margin-bottom: 2%;
+        width: 50%;
+        border-radius: 1rem;
+    }
+    .cuadro-texto {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .mapa {
+        width: 80%;
+    }
+    .body-adquirir-tarifa form {
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 35px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .imagen_index2 {
+        display: none;
+    }
+    .imagen_index3 {
+        display: flex;
+        justify-content: center;
+    }
+    .imagen_index3 img {
+        width: 10rem;
+    }
+    .ver-planes {
+        width: 90%;
+    }
+    .tarifa {
+        width: 80%;
+    }
+}

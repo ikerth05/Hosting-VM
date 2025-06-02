@@ -1,0 +1,38 @@
+<?php
+session_start();
+
+if (!isset($_GET['id_maquina'])) {
+    echo "ID de máquina no proporcionada. <a href='mismaquinas.php'>Volver</a>";
+    exit;
+}
+
+$id_maquina = intval($_GET['id_maquina']);
+
+// Define los comandos según el ID
+switch ($id_maquina) {
+    case 1:
+        $comando = 'VBoxManage controlvm maquina1 reset';
+        break;
+    case 2:
+        $comando = 'VBoxManage controlvm maquina2 reset';
+        break;
+    default:
+        echo "ID de máquina inválido. <a href='mismaquinas.php'>Volver</a>";
+        exit;
+}
+
+// Ejecuta el comando y captura la salida
+$output = shell_exec("$comando 2>&1");
+
+// Verifica si hubo un error
+if (stripos($output, 'error') !== false || stripos($output, 'failed') !== false) {
+    echo "<h3>Error al reiniciar la máquina:</h3>";
+    echo "<pre>$output</pre>";
+    echo "<a href='mismaquinas.php'>Volver</a>";
+    exit;
+}
+
+// Si todo fue bien, redirige
+header('Location: mismaquinas.php');
+exit;
+?>

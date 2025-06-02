@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono.svg" type="image/svg">
+    <link rel="stylesheet" href="login-signup.css">
+    <title>Editar usuario</title>
+</head>
+<body>
+    <main>
+        <div class="aside">
+            <img src="img/Xhosting.svg" alt="logo">
+            <h1>Virtual <br> Hosting <br>Services</h1>
+        </div>
+        <div class="formh1">
+            <h1>Editar Cuenta de usuario</h1>
+            <p class="blanco">Deje en blanco los campos que no desee modificar</p>
+            <form action="edit_user.php" method="POST" enctype="multipart/form-data">
+                <p>Nombre de usuario:</p>
+                <input type="text" name="nombre" placeholder="username">
+                <p>Correo electronico:</p>
+                <input type="email" name="correo" placeholder="example@gmail.com">
+                <p>Telefono:</p>
+                <input type="tel" name="telf" placeholder="ex: 123456789" pattern="\d{9}" maxlength="9" title="Debe tener exactamente 9 dígitos">
+                <p>Contraseña:</p>
+                <input type="password" name="pass" placeholder="password">
+                <p>Repíta la contraseña:</p>
+                <input type="password" name="pass_confirm" placeholder="password">
+                <br><br><br>
+                <button type="submit">Actualizar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

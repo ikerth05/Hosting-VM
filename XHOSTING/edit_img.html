@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono.svg" type="image/svg">
+    <link rel="stylesheet" href="login-signup.css">
+    <title>Editar icono</title>
+</head>
+<body>
+    <main>
+        <div class="aside">
+            <br>
+            <img src="img/Xhosting.svg" alt="logo">
+            <h1>Virtual <br> Hosting <br>Services</h1>
+        </div>
+        <div class="formh1">
+            <h1>Editar el icono de usuario</h1>
+            <form action="edit_img.php" method="POST" enctype="multipart/form-data">
+                <p>Icono de usuario:</p>
+                <input class="input-imagen" type="file" name="imagen" accept="image/*">
+                <br><br><br>
+                <button type="submit">Actualizar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

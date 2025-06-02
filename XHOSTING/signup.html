@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-signup.css">
+    <link rel="icon" href="img/icono.svg" type="image/svg">
+    <title>Signup</title>
+</head>
+<body>
+
+    <main>
+        <div class="aside">
+            <img src="img/Xhosting.svg" alt="logo">
+            <h1>Virtual <br> Hosting <br>Services</h1>
+        </div>
+        <div class="formh1">
+        <h1>Regístrate</h1>
+        <form action="signup.php" method="POST" enctype="multipart/form-data">
+            <p>Nombre de usuario:</p>
+            <input type="text" name="nombre" placeholder="username" required>
+            <p>Correo electronico:</p>
+            <input type="email" name="correo" placeholder="example@gmail.com" required>
+            <p>Telefono:</p>
+            <input type="tel" name="telf" placeholder="ex: 123456789" required pattern="\d{9}" maxlength="9" title="Debe tener exactamente 9 dígitos">
+            <p>Contraseña:</p>
+            <input type="password" name="pass" placeholder="password" required>
+            <p>Repíta la contraseña:</p>
+            <input type="password" name="pass_confirm" placeholder="password" required>
+            <p>Icono de usuario:</p>
+            <input class="input-imagen" type="file" name="imagen" accept="image/*">
+            <br><br><br>
+            <button type="submit">Registrarse</button>
+            <br><br>
+            <a href="login.html">Ya eres usuario? Inicia sessión</a>
+        </form>            
+        </div>
+    </main>
+</body>
+</html>

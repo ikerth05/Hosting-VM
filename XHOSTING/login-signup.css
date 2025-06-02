@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/p6.png);
+}
+img {
+    width: 8rem;
+    height: 8rem;
+}
+main{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: solid 1px black;
+    border-radius: 1rem;
+    padding: 3%;
+    padding-top: 0;
+    padding-bottom: 1%;
+    margin-top: 1rem;
+}
+.formh1{
+    display: flex;
+    flex-direction: column;
+}
+.aside{
+    color: #0048f9;
+    margin-right: 2rem;
+    text-align: center;
+}
+input{
+    width: 80%;
+}
+.input-imagen {
+    width: 100%;
+}
+.blanco {
+    margin-top: 0;
+    font-style: italic;
+}
