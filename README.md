@@ -8,7 +8,7 @@
     - JS   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JS Logo" width="15"/>
 
 - La página contiene un sistema de Login funcional que ingresa los datos en la Base de Datos del servidor principal el cual hace uso de MySQL.
-  IMAGEN
+  <img src="/img/Crear_maquinas.png" alt="HTML5" width="40"/>
 - También contiene un apartado el cual sirve para comprar las máquinas y es el apartado realizado con JS, también ingresa los valores en la BD.
   IMAGEN
 - Y un apartado para encender / apagar / reiniciar las máquinas de los clientes. Para que lleven su propia gestión.
