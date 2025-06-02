@@ -28,4 +28,3 @@
 - EN EL DOCUMENTO <a href="https://github.com/ikerth05/Hosting-VM/blob/main/Copia%20de%20Esquema-Infraestructura.pptx.pdf">ESQUEMA</a> SE PUEDE OBSERVAR DE FORMA GRÁFICA PARA MEJOR EXPLICACIÓN.
 
 # También contiene una parte de documentos de legislación la cual no está subida al repositorio
-
