@@ -20,6 +20,10 @@
 <br>
   <img src="/img/Gestion_maquinas.png" alt="HTML5" width="1200"/>
 
+# Para ver el funcionamiento de la página web adjunto un video.
+<br>
+<a href="/img/PAGINA-WEB.mp4">LINK</a>
+
 
 # Conexión a las máquinas clientes
 
