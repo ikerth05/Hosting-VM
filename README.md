@@ -9,11 +9,13 @@
 
 - La página contiene un sistema de Login funcional que ingresa los datos en la Base de Datos del servidor principal el cual hace uso de MySQL.
   <br>
-  <img src="/img/Crear_maquinas.png" alt="HTML5" width="1200"/>
+  <img src="/img/Login.png" alt="HTML5" width="1200"/>
 - También contiene un apartado el cual sirve para comprar las máquinas y es el apartado realizado con JS, también ingresa los valores en la BD.
-  IMAGEN
+  <img src="/img/Crear_maquinas.png" alt="HTML5" width="1200"/>
+- Menu metodos de pago.
+  <img src="/img/Metodos_de_pago.png" alt="HTML5" width="1200"/>
 - Y un apartado para encender / apagar / reiniciar las máquinas de los clientes. Para que lleven su propia gestión.
-  IMAGEN
+  <img src="/img/Gestion_maquinas.png" alt="HTML5" width="1200"/>
 
 
 # Conexión a las máquinas clientes
